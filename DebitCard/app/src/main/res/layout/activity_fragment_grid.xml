@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/gridLayout"
+    android:columnCount="3"
+    android:rowCount="8"
+    android:padding="16dp"
+    android:layout_marginTop="100dp"
+    tools:context=".FragmentGrid">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:text="B1"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/phone"
+        android:elevation="10dp"
+        android:background="@drawable/rect_edit_text"
+        android:layout_columnWeight="1"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:text="B2"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rect_edit_text"
+        android:src="@drawable/message"
+        android:elevation="10dp"
+        android:layout_columnWeight="1"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:text="B3"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rect_edit_text"
+        android:src="@drawable/idea"
+        android:elevation="10dp"
+        android:layout_columnWeight="1"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:text="B3"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rect_edit_text"
+        android:src="@drawable/customer"
+        android:elevation="10dp"
+        android:layout_columnWeight="1"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:text="B3"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rect_edit_text"
+        android:src="@drawable/video"
+        android:elevation="10dp"
+        android:layout_columnWeight="1"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:elevation="10dp"
+        android:text="B3"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rect_edit_text"
+        android:src="@drawable/presentation"
+        android:layout_columnWeight="1"/>
+
+</GridLayout>
