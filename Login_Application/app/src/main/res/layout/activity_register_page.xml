@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".register_page"
+    android:background="@drawable/register_page_background">
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="150dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/register_icon" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+<!--    android:background="@color/white">-->
+<!--    android:layout_below="@+id/imgview">-->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rect_edit_text"
+            android:gravity="center"
+            android:hint="First Name"
+            android:textColor="@color/orangle"
+            android:textColorHint="@color/orangle" />
+
+        <EditText
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rect_edit_text"
+        android:gravity="center"
+        android:hint="Last Name"
+            android:textColor="@color/orangle"
+        android:textColorHint="@color/orangle" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rect_edit_text"
+        android:hint="Email"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
+        android:textColor="@color/orangle"
+        android:textColorHint="@color/orangle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rect_edit_text"
+        android:hint="ID"
+        android:drawableLeft="@drawable/id"
+        android:drawablePadding="10dp"
+        android:textColor="@color/orangle"
+        android:textColorHint="@color/orangle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rect_edit_text"
+        android:hint="Company Name"
+        android:drawableLeft="@drawable/company_svgrepo_com"
+        android:drawablePadding="10dp"
+        android:textColor="@color/orangle"
+        android:textColorHint="@color/orangle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rect_edit_text"
+        android:hint="Car Name"
+        android:drawableLeft="@drawable/car_side_svgrepo_com"
+        android:drawablePadding="10dp"
+        android:textColor="@color/orangle"
+        android:textColorHint="@color/orangle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rect_edit_text"
+        android:hint="Car Number"
+        android:drawableLeft="@drawable/car_side_svgrepo_com"
+        android:drawablePadding="10dp"
+        android:textColor="@color/orangle"
+        android:textColorHint="@color/orangle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/rect_edit_text"
+            android:drawableLeft="@drawable/car_side_svgrepo_com"
+            android:drawablePadding="10dp"
+            android:hint="Phone Number"
+            android:textColor="@color/orangle"
+            android:textColorHint="@color/orangle" />
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rect_edit_text"
+        android:hint="Industry"
+        android:drawableLeft="@drawable/car_side_svgrepo_com"
+        android:drawablePadding="10dp"
+        android:textColor="@color/orangle"
+        android:textColorHint="@color/orangle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rect_edit_text"
+            android:hint="Blood Group"
+            android:drawableLeft="@drawable/car_side_svgrepo_com"
+            android:drawablePadding="10dp"
+            android:textColor="@color/orangle"
+            android:textColorHint="@color/orangle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rect_edit_text"
+            android:hint="Address"
+            android:drawableLeft="@drawable/car_side_svgrepo_com"
+            android:drawablePadding="10dp"
+            android:textColor="@color/orangle"
+            android:textColorHint="@color/orangle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rect_edit_text"
+            android:hint="City"
+            android:drawableLeft="@drawable/car_side_svgrepo_com"
+            android:drawablePadding="10dp"
+            android:textColor="@color/orangle"
+            android:textColorHint="@color/orangle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rect_edit_text"
+            android:hint="State"
+            android:drawableLeft="@drawable/car_side_svgrepo_com"
+            android:drawablePadding="10dp"
+            android:textColor="@color/orangle"
+            android:textColorHint="@color/orangle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rect_edit_text"
+            android:hint="Country"
+            android:drawableLeft="@drawable/car_side_svgrepo_com"
+            android:drawablePadding="10dp"
+            android:textColor="@color/orangle"
+            android:textColorHint="@color/orangle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rect_edit_text"
+            android:hint="Pin Code"
+            android:drawableStart="@drawable/car_side_svgrepo_com"
+            android:drawablePadding="10dp"
+            android:textColor="@color/orangle"
+            android:textColorHint="@color/orangle"/>
+
+    </LinearLayout>
+</ScrollView>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/orangle"
+        android:text="Request SignUp"
+        android:textColor="@color/white"
+        />
+
+
+</LinearLayout>

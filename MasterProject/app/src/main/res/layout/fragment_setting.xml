@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingFragment"
+    android:background="@drawable/bgsetting">
+
+    <!-- Settings Title -->
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFC107"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Settings Options -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Playback option"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp" />
+
+            <Switch
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:text="Resume playback"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"/>
+
+            <Switch
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:text="Shake to play next song"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:paddingStart="20dp"
+                android:layout_marginTop="40dp"/>
+
+            <Switch
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:text="Volume limit"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:paddingStart="20dp"/>
+
+            <TextView
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:text="Player option"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"/>
+
+
+
+            <Switch
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:text="Album artist"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:paddingStart="20dp"
+                android:layout_marginTop="55dp"/>
+
+            <Switch
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:text="Album art auto download"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:paddingStart="20dp"
+                android:layout_marginTop="40dp"/>
+
+            <Switch
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:text="Download artist images"
+                android:textColor="@color/black"
+                android:paddingStart="20dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:text="Equalizer preferences"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:paddingStart="20dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

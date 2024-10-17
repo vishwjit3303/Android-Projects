@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FDC883">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".SchoolRegistration">
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="XYZ College/School"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_below="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Student Registration Form"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linearfield1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/title2"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Student Image: "
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"/>
+
+        <FrameLayout
+            android:layout_width="133dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/myImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/baseline_person_24" />
+
+            <ImageView
+                android:id="@+id/successimg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="5dp"
+                android:contentDescription="success"
+                android:src="@drawable/success"
+                android:visibility="gone"/>
+
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="(less than 5mb)"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp"/>
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/uploadbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearfield1"
+
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="120dp"
+            android:gravity="center"
+            android:backgroundTint="@color/orangle"
+            android:text="Upload Photo" />
+
+        <LinearLayout
+        android:id="@+id/linearfield2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearfield1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Student Name: "
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Full Name"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:background="@drawable/rect_edit_text"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearfield3"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearfield2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Father's Name: "
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Father's Full Name"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:background="@drawable/rect_edit_text"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearfield4"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearfield3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:text="Mother's Name: "
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Mother's Full Name"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rect_edit_text"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearfield5"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearfield4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:text="Gender : "
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/languageRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textColor="@color/black"
+            android:layout_marginEnd="20dp">
+
+            <RadioButton
+                android:id="@+id/maleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/femaleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/otherRadioButton"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Other"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearfield6"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearfield5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:text="Date of Birth:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Select Date"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/rect_edit_text"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearfield7"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearfield6"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:text="Email:  "
+        android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="email@xyz.dom"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:background="@drawable/rect_edit_text"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearfield8"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearfield7"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:text="Level: "
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/spinner_level"
+            android:layout_width="207dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rect_edit_text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearfield9"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearfield8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:text="Department: "
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/spinner2_level"
+            android:layout_width="207dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rect_edit_text"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearfield10"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearfield9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:text="Tel/Mobile No: "
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="XXX XXX XXXX"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:background="@drawable/rect_edit_text"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/permanentaddr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/linearfield10"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Permanent Address"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/linearfield11"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/permanentaddr"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="20dp"
+                android:text="State: "
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="State"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:background="@drawable/rect_edit_text"
+                android:layout_marginEnd="20dp"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearfield12"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/linearfield11"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="20dp"
+                android:text="City: "
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="City"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:background="@drawable/rect_edit_text"
+                android:layout_marginEnd="20dp"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearfield13"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/linearfield12"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="20dp"
+                android:text="Zip Code: "
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Zip Code"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:background="@drawable/rect_edit_text"
+                android:layout_marginEnd="20dp"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tempaddr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/linearfield13"
+            android:text="Temporary Address"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+
+        <LinearLayout
+            android:id="@+id/linearfield14"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tempaddr"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_terms"
+                android:text="Same as Permanent Address"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearfield15"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/linearfield14"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="20dp"
+                android:text="State: "
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="State"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:background="@drawable/rect_edit_text"
+                android:layout_marginEnd="20dp"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearfield16"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/linearfield15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="20dp"
+                android:text="City: "
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="City"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:background="@drawable/rect_edit_text"
+                android:layout_marginEnd="20dp"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearfield17"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/linearfield16"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="20dp"
+                android:text="Zip Code: "
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Zip Code"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:background="@drawable/rect_edit_text"
+                android:layout_marginEnd="20dp"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerbtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearfield17"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#FF9800"
+            android:gravity="center"
+            android:text="Register"
+            android:elevation="20dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

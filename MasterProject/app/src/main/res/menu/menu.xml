@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/home_svgrepo_com"/>
+
+    <item android:id="@+id/nav_dash"
+        android:title="Dashboard"
+        android:icon="@drawable/dashboard_svgrepo_com"/>
+
+    <item android:id="@+id/nav_calculator"
+        android:title="Calculator"
+        android:icon="@drawable/calculator_svgrepo_com"/>
+
+    <item android:id="@+id/nav_registration"
+        android:title="School Registration Form"
+        android:icon="@drawable/calculator_svgrepo_com"/>
+
+    <item android:id="@+id/nav_setting"
+        android:title="Setting"
+        android:icon="@drawable/setting_setting_svgrepo_com"/>
+
+    <item android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/logout_exit_svgrepo_com"/>
+
+
+
+</menu>
