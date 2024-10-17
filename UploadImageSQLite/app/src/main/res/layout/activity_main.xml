@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/uploadimg"
+        android:layout_below="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/uploadimg"
+        android:onClick="chooseImage"/>
+
+    <EditText
+        android:id="@+id/edittxt"
+        android:layout_below="@+id/uploadimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the img name"/>
+
+    <Button
+        android:id="@+id/uploadbtn"
+        android:onClick="storeImage"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="33dp"
+        android:layout_marginHorizontal="100dp"
+        android:gravity="center"
+        android:text="upload" />
+
+
+</RelativeLayout>
